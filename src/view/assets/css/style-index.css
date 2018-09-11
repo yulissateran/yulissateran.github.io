@@ -1,28 +1,16 @@
-/* Body*/
 @font-face {
-  font-family: 'league spartan';
+  font-family: 'League spartan';
   src: url(../fonts/leaguespartan-bold.ttf);
   font-weight: bold;
 }
-html body header{
+
+body header {
   font-family: 'Open Sans', sans-serif;
 }
 ul {
   list-style: none;
 }
- .borde1 a {
-  padding: 1rem 1rem; 
-  color: #FC7162;   
-  text-decoration: none;  
-  font-size: 1rem;
-  font-weight: 400;  
-  transition: all 100ms ease;
-}
 
-.title-color {
-  color: #FC7162;
-  font-family: 'league spartan',  Serif;
-}
 .my-navbar {
   padding: .6rem 1rem;
   background-color: white;
@@ -30,12 +18,7 @@ ul {
   width: 100%;
   z-index: 9999;
 }
-.title {
-  font-size: 6rem;
-}
-.title2 {
-  font-size: 30px;
-}
+
 .icon::before {
   display: inline-block;
   font-style: normal;
@@ -56,39 +39,24 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.color-name {
+.font-l-spartan {
+  font-family: 'League spartan',  serif; 
+}
+.main-text {
+  color:#FC7162;
   font-size: 5rem;
-  color:    #FC7162;
-  font-family: 'league spartan',  Serif; 
+ 
+}
+.secondary-text {
+  color:#2a3262;
+}
+header a:hover {
+  color:  #007bff; 
+}
 
-}
-.color-names {
-  color:    #FC7162;
-  font-family: 'league spartan',  Serif; 
-
-}
-.btn-green {
-  background-color:  #FC7162;
-  color: white;
-}
-/* Estilos a home*/
 .total-height {
   height: 100vh;
 }
-
-
-.borde3 {
-  background-color: #EFF0F4;
-
-}
-.borde1{
-background-color:   #242F45;
-}
-
-.text-about-me {
-color:  #007bff;
-}
-
 
 .img {
   width: 100%;
@@ -117,4 +85,48 @@ color:  #007bff;
 .padding-none {
   padding: 0px;
   margin: 0%;
+}
+
+
+
+
+
+
+/* .title {
+  font-size: 6rem;
+} */
+/* .title2 {
+  font-size: 30px;
+} */
+
+/* .color-name {
+ color: white;
+  text-shadow:  1px 1px 1px #000000;
+ font-size: 5rem; 
+  color:    #FC7162;
+  font-family: 'league spartan',  Serif; 
+} */
+
+
+/* Estilos a home*/
+
+.borde3 {
+  background-color: #EFF0F4;
+
+}
+.borde1{
+background-color:   #242F45;
+}
+.borde1 a {
+  padding: 1rem 1rem; 
+  color: #FC7162;   
+  text-decoration: none;  
+  font-size: 1rem;
+  font-weight: 400;  
+  transition: all 100ms ease;
+}
+
+.btn-green {
+  background-color:  #FC7162;
+  color: white;
 }
