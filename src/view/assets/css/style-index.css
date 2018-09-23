@@ -3,12 +3,26 @@
   src: url(../fonts/leaguespartan-bold.ttf);
   font-weight: bold;
 }
-
-body header {
-  font-family: 'Open Sans', sans-serif;
+body, header {
+  font-family: 'Montserrat', sans-serif;
 }
 ul {
   list-style: none;
+}
+.text-color-main {
+   color: #f55071;
+}
+.secondary-background {
+  background-color: #2a3262;
+}
+.contact-color {
+  color:  #505257;
+}
+.main-color { 
+  color: #9BA9C5;
+}
+ h2, h3 {
+  font-family: 'Source Sans Pro', sans-serif
 }
 
 .my-navbar {
@@ -35,25 +49,37 @@ ul {
 }
 .img-home {
   background-position: center center;
-  background-image: url('../img/home5.jpg');
+  background-image: url('https://images.pexels.com/photos/939331/pexels-photo-939331.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background-repeat: no-repeat;
   background-size: cover;
 }
 .font-l-spartan {
   font-family: 'League spartan',  serif; 
 }
+.bg-skills {
+  background-color:   #2a3262;
+}
+
+.background-main {
+  background-color: #f55071;
+}
+
 .main-text {
-  color:#FC7162;
-  font-size: 5rem;
- 
+  color: #f55071;
 }
 .secondary-text {
   color:#2a3262;
 }
-header a:hover {
-  color:  #007bff; 
+#navbar a {
+  color: #2a3262;
 }
 
+#navbar a:hover {
+  color: #f55071;
+} 
+.size-icons {
+  font-size: 3rem;
+}
 .total-height {
   height: 100vh;
 }
@@ -70,11 +96,13 @@ header a:hover {
 	height: auto;
 } 
 
-.overlay:hover .contaainer-description-p{ 
-	opacity:0.9; 
-	color:#FFFFFF; 
-	font-weight:700;
-	background-color: #021624;
+.overlay:hover .contaainer-description-p { 
+	opacity:9; 
+  color:#FFFFFF; 
+  /* color:#FC7162; */
+  font-weight:700;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+	background-color: rgba(26, 74, 114, 0.8);;
 	text-align: center;
 	padding-top: 20%;
 	min-height: 100%; 
@@ -86,25 +114,9 @@ header a:hover {
   padding: 0px;
   margin: 0%;
 }
-
-
-
-
-/* .title {
-  font-size: 6rem;
-} */
-/* .title2 {
-  font-size: 30px;
-} */
-
-/* .color-name {
- color: white;
-  text-shadow:  1px 1px 1px #000000;
- font-size: 5rem; 
-  color:    #FC7162;
-  font-family: 'league spartan',  Serif; 
-} */
-
+.color-transparent {
+  color: transparent;
+}
 
 /* Estilos a home*/
 
@@ -113,18 +125,22 @@ header a:hover {
 
 }
 .borde1{
-background-color:   #242F45;
+background-color:  #2a3262;
 }
 .borde1 a {
   padding: 1rem 1rem; 
-  color: #FC7162;   
-  text-decoration: none;  
-  font-size: 1rem;
-  font-weight: 400;  
-  transition: all 100ms ease;
 }
 
 .btn-green {
-  background-color:  #FC7162;
+  background-color:  #f55071;
   color: white;
 }
+i:hover {
+  color: #f55071;
+}
+
+@media (min-width: 445px) { 
+  h1 {
+    font-size: 5rem;
+  }
+ }

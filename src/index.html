@@ -2,199 +2,314 @@
 <html lang="en">
 
 <head>
+  <link rel="shortcut icon" type="image/x-icon" href="./view/assets/img/logo.jpg" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shirink-to-fit-no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
   <link href="./view/assets/fonts/LeagueSpartan-Bold.otf" rel="stylesheet">
+  <link href="./view/assets/css/ihover.css" rel="stylesheet">
+  <link href="./view/assets/css/ihover.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./view/assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./view/assets/css/style-index.css">
-  <title>Portafolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Source+Sans+Pro|Sacramento" rel="stylesheet">
+  <title>yulissa teran</title>
 </head>
-
 <body>
   <header class="img-home">
-    <nav class="nav navbar my-navbar navbar-expand-lg justify-content-between width-all ">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ">
-          <li class="nav-item">
-            <a class="nav-link secondary-text font-l-spartan" href="#work">PORTAFOLIO
-              <span class="sr-only"></span>
-            </a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white nav-a-hover fixed-top border-bottom" id="navbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand  p-1 px-3" href="#"><img width="40px" height="40px" src="./view/assets/img/logo.jpg"></a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+                <a class="nav-link" href="#home">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link secondary-text font-l-spartan"" href="#-">SOBRE MÍ</a>
+            <a class="nav-link"  href="#aboutMe">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item active">
+              <a class="nav-link" href="#skills">HABILIDADES</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="#portfolio">PORTAFOLIO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link secondary-text font-l-spartan"" href="">CONTACTO</a>
+            <a class="nav-link " href="#contact">CONTACTO</a>
           </li>
         </ul>
       </div>
-      <button class="border-0 bg-transparent ">
-        <span class="icon menu"></span>
-      </button>
     </nav>
-    <section class="container-fluid ">
-      <div class="row align-items-center justify-content-center total-height">
-        <div class="col-12">
-          <h1 class="text-center main-text font-l-spartan">YULISSA TERÁN</h1>
-          <h2 class="text-light text-center">Front-End Developer</h2>
+    <section class="container-fluid" id="home">
+      <div class="row align-items-center justify-content-center total-height ">
+        <div class="col-12 align-items-center text-center">
+          <h1 class="text-center main-text font-l-spartan">Yulissa Terán</h1>
+          <h2 class="text-center secondary-text">Front-end Developer</h2>
+          <div>
+            <a href="https://www.linkedin.com/in/yulissateran/" target="_blank"><i class="fab fa-linkedin-in text-light p-3 size-icons"
+                title="linkedin"></i></a>
+            <a href="https://github.com/yulissateran" target="_blank"><i class="fab fa-github text-light  p-3 size-icons"
+                title="github"></i></a>
+          </div>
         </div>
       </div>
       <section>
+        <div class="container-fluid">
+          <div class="row align-items-center">
+          </div>
   </header>
   <main>
-    <section class="py-3 ">
+    <section class="py-3" id="aboutMe">
       <div class="container-fluid">
         <div class="row">
-          <h3 class="col-12 text-center secondary-text py-2 ">Sobre mí</h3>
+          <h3 class="col-12 text-center secondary-text py-2">Sobre mí</h3>
         </div>
         <div class="row justify-content-center align-items-center">
           <!-- figure -->
           <div class="col-11 col-md-6">
-            <p class="text-center  px-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam in excepturi necessitatibus laudantium voluptatibus vitae, veritatis aperiam magnam nostrum impedit, libero illum neque illo pariatur quis. Deleniti enim doloribus delectus!</p>
+            <p class="text-center  px-2">
+              Autónoma, proactiva y aprendiz continua. Me apasionan la tecnología y los proyectos de ayuda social. Amo descubrir nuevas
+              formas de construir experiencias digitales sencillas, hermosas y útiles. Durante mi formación en Laboratoria
+              eh colaborado en proyectos web que desarrollaron mi capacidad de asumir retos constantes, autogestiónar el
+              tiempo, aplicar metodologías ágiles y priorizar las tareas que agreguen valor al usuario para alcanzar los
+              objetivos propuestos. Me gusta compartir y transmitir conocimiento a otros.
+            </p>
+          </div>
+          <!-- <div class=" justify-content-center align-items-center"> -->
+            <img src="./view/assets/img/logo.jpg"  alt="" class="col-7 col-md-3 rounded-circle">
+          <!-- </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="py-3 bg-skills" id="skills">
+      <div class="container-fluid">
+        <div class="row">
+          <h3 class="col-12 text-center text-light py-2 ">Habilidades técnicas</h3>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-10 col-md-6">
+            <div class="row">
+              <div class="col-6 col-md-3">
+                <div class="d-flex justify-content-center"><i class="fab fa-js-square text-light size-icons"></i></div>
+                <div class="d-flex justify-content-center main-color">
+                  <p>Javascript</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 ">
+                <div class="d-flex justify-content-center"><i class="fab fa-html5 text-light size-icons"></i></div>
+                <div class="d-flex justify-content-center main-color">
+                  <p>HTML5</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="d-flex justify-content-center"><i class="fab fa-css3-alt text-light size-icons"></i></div>
+                <div class="d-flex justify-content-center main-color">
+                  <p>CSS3</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="d-flex justify-content-center"><i class="fab fa-node text-light size-icons"></i></div>
+                <div class="d-flex justify-content-center main-color">
+                  <p>Node</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="d-flex justify-content-center"><i class="fab fa-angular text-light size-icons"></i></div>
+                <div class="d-flex justify-content-center main-color">
+                  <p>Angular</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="d-flex justify-content-center"><i class="fab fa-git-square text-light size-icons"></i></div>
+                <div class="d-flex justify-content-center main-color">
+                  <p>Git</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="d-flex justify-content-center"><i class="fab fa-github text-light size-icons"></i></div>
+                <div class="d-flex justify-content-center main-color">
+                  <p>Github</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="d-flex justify-content-center"><i class="fas fa-database text-light size-icons"></i></div>
+                <div class="d-flex justify-content-center main-color">
+                  <p>Firebase</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="py-3 ">
-        <div class="container-fluid">
-          <div class="row">
-            <h3 class="col-12 text-center secondary-text py-2 ">Habilidades</h3>
-          </div>
-          <div class="row justify-content-center align-items-center">
-          
-            <div   class="row justify-content-center align-items-center">
-             <ul class="col-11 col-md-5">
-                <li><i class="fab fa-js-square"></i></li>
-                <li><i class="fab fa-css3-alt"></i></li>
-                <li><i class="fab fa-html5"></i></li>
-                <li><i class="fab fa-node"></i></li>
-                <li><i class="fab fa-angular"></i></li>
-                <li><i class="fab fa-git-square"></i></li>
-               <li>Lorem inima neque? asperiorenetur!</li>
-               <li>Lorem  ucorporis qui asperiores tenetur!</li>
-             </ul>
-             <ul class="col-11 col-md-5">
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsu</li>
-              <li>Lorem ipsum </li>
-              <li>Lorem am ne</li>
-              <li>Lorem ue? </li>
-             <li>Lorem inima</li>
-             <li>Lorem  ucor</li>
-             </ul>
-            </div>
-          </div>
+    <section class="py-3 bg-skills">
+      <div class="container-fluid">
+        <div class="row">
+          <h3 class="col-12 text-center text-light py-2">Habilidades blandas</h3>
         </div>
-      </section>
-
-    <section class="py-5 ">
-      <section class="container-fluid">
-          <div class="row">
-              <h3 class="col-12 text-center secondary-text py-2 ">Como enfrento los retos de código</h3>
-            </div>
-        <div class="row justify-content-center">
-
-          <div class="col-md-4 overlay padding-none">
-            <img src="./view/assets/img/register-comunal.png" class="img">
-            <div class="contaainer-description-p">
-               <div class="row">
-                  <div class="container-fluid">
-                      <div class="row">
-                          <p class="col-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum ut id beatae repellat et voluptatem blanditiis deleniti at, minima ipsa. Minus ipsa animi esse, ut nisi delectus quod impedit repellat?
-                          </p>
-                        </div>
-                  </div>
-               </div> 
-              <div class="row justify-content-center">
-
-                <a target="_blank" class="btn  btn-green col-5 my-3 py-2" href="" role="button" id="">
-                  <span class="icon"></span> Demo</a>
-                <a target="_blank" class="btn  btn-green col-5 my-3 py-2 ml-2" href="" role="button" id="">
-                  <span class=""></span> Github</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 overlay padding-none">
-            <img src="./view/assets/img/social-network-v1.png" class="img">
-
-            <div class="contaainer-description-p">
-              <div class="row justify-content-center">
-                  <div class="container-fluid">
-                      <div class="row">
-                          <p class="col-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum ut id beatae repellat et voluptatem blanditiis deleniti at, minima ipsa. Minus ipsa animi esse, ut nisi delectus quod impedit repellat?
-                          </p>
-                        </div>
-                  </div>
-                <a target="_blank" class="btn  btn-green col-5 my-3 py-2" href="" role="button" id="">
-                  <span class="icon"></span> Demo</a>
-                <a target="_blank" class="btn  btn-green col-5 my-3 py-2 ml-2" href="" role="button" id="">
-                  <span class=""></span> Github</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 overlay padding-none">
-            <img src="./view/assets/img/foodmap.png" class="img">
-
-            <div class="contaainer-description-p">
-              <div class="row justify-content-center">
-                <div class="container-fluid">
-                    <div class="row">
-                        <p class="col-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum ut id beatae repellat et voluptatem blanditiis deleniti at, minima ipsa. Minus ipsa animi esse, ut nisi delectus quod impedit repellat?
-                        </p>
-                      </div>
+        <div class="row  d-flex justify-content-center">
+          <div class="col-10 col-md-6">
+            <div class="row">
+              <div class="col-6 col-md-4">
+                <div class="d-flex justify-content-center"><i class="fab fa-leanpub text-light size-icons"></i></div>
+                <div class="d-flex justify-content-center main-color">
+                  <p>Autoaprendizaje</p>
                 </div>
-                <a target="_blank" class="btn  btn-green col-5 my-3 py-2" href="" role="button" id="">
-                  <span class="icon"></span>
-                  Demo
-                </a>
-                <a target="_blank" class="btn  btn-green col-5 my-3 py-2 ml-2" href="" role="button" id="">
-                  <span class=""></span>
-                  Github
-                </a>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="d-flex justify-content-center"><i class="fas fa-clock  text-light size-icons"></i></div>
+                <div class="d-flex justify-content-center main-color">
+                  <p>Autogestion</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="d-flex justify-content-center"><i class="fas fa-hands-helping text-light size-icons"></i></div>
+                <div class="d-flex justify-content-center main-color">
+                  <p>Colaboración</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="d-flex justify-content-center"><i class="fas fa-sync-alt text-light size-icons"></i></div>
+                <div class="d-flex justify-content-center main-color">
+                  <p>Adaptabilidad</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="d-flex justify-content-center"><i class="fas fa-angle-double-right text-light size-icons"></i></div>
+                <div class="d-flex justify-content-center main-color">
+                  <p>Proactividad</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="d-flex justify-content-center"><i class="fab fa-trello text-light size-icons"></i></div>
+                <div class="d-flex justify-content-center main-color">
+                  <p>Planificación</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="py-5" id="portfolio">
+      <section class="container-fluid">
+        <div class="row">
+          <h3 class="col-12 text-center secondary-text py-2 ">Cómo abordo los retos de código</h3>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 overlay padding-none">
+                <img src="./view/assets/img/register-comunal.png" class="img padding-none">
+                <div class="contaainer-description-p">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <p class="col-10">Registrar las visitas de un coworking con una foto y notificar a sus anfitriones</p>
+                    </div>
+                    <div class="row justify-content-center">
+                      <a target="_blank" class="btn  btn-green col-5 my-3 py-2" href="https://github.com/yulissateran/proyecto-final-common-core/src" role="button" id="">
+                        <i class="fas fa-eye"></i></a>
+                      <a target="_blank" class="btn  btn-green col-5 my-3 py-2 ml-2" href="https://github.com/yulissateran/proyecto-final-common-core" role="button" id="">
+                        <i class="fas fa-code"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 overlay padding-none">
+                <img src="./view/assets/img/social-network-v1.png" class="img padding-none">
+                <div class="contaainer-description-p">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <p class="col-10">Crear una red social para amantes de la tecnología</p>
+                    </div>
+                    <div class="row justify-content-center">
+                      <a target="_blank" class="btn  btn-green col-5 my-3 py-2" href="https://yulissateran.github.io/lim-2018-01-social-network-frameworks/" role="button" id="">
+                        <i class="fas fa-eye"></i></a>
+                      <a target="_blank" class="btn  btn-green col-5 my-3 py-2 ml-2" href="https://github.com/yulissateran/lim-2018-01-social-network-frameworks" role="button" id="">
+                        <i class="fas fa-code"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
       </section>
     </section>
-    <section class="container-fluid borde1">
-
-    </section>
-    <section class="container-fluid borde2">
-
+    <section class="py-5 borde1" id="contact">
+      <div class="container-fluid">
+        <div class="row justify-content-center align-items-center">
+          <h2 class="col-12 text-center py-2 mb-1 text-light">Construyamos algo increible juntos!</h2>
+        </div>
+        <div class="row  d-flex justify-content-center">
+          <div class="col-10 col-md-6">
+            <div class="row">
+              <div class="col-6 col-md-4">
+                <div class="d-flex justify-content-center">
+                  <a href="mailto:yulissa.lteran@gmail.com" class="pl-0 text-light" title="yulissa.lteran@gmail.com">
+                    <i class="fas fa-envelope size-icons"></i>
+                  </a>
+                </div>
+                <div class="d-flex justify-content-center text-light">
+                  <p>Gmail</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="d-flex justify-content-center">
+                  <a href="https://www.linkedin.com/in/yulissateran/" target="_blank" class="pl-0 text-light" title="https://www.linkedin.com/in/yulissateran/"><i
+                      class="fab fa-linkedin size-icons"></i></a>
+                </div>
+                <div class="d-flex justify-content-center text-light">
+                  <p>Linkedin</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="d-flex justify-content-center">
+                  <a href="https://github.com/yulissateran" target="_blank" class="pl-0 text-light" title="https://github.com/yulissateran"><i
+                      class="fab fa-github size-icons"></i></a>
+                </div>
+                <div class="d-flex justify-content-center text-light">
+                  <p>Github</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="d-flex justify-content-center">
+                  <a href="https://drive.google.com/open?id=1SJSxNxUEt8XidQ38hwJRzPF-HQN0_JIb" target="_blank" class="pl-0 text-light" title="Curriculum"><i
+                      class="fas fa-file-alt size-icons"></i></a>
+                </div>
+                <div class="d-flex justify-content-center text-light">
+                  <p>Curriculum</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="d-flex justify-content-center">
+                  <a href="https://www.google.com/maps/dir//Villa+Mar%C3%ADa+del+Triunfo/@-12.1742412,-76.9937119,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x9105b92b9e02c189:0x4e31ea20f4c5e783!2m2!1d-76.9297354!2d-12.1590715"
+                    target="_blank" class="pl-0 text-light" title="Jr Sucre 138, San Gabriel, VMT"><i class="fas fa-map-marker-alt size-icons "></i></a>
+                </div>
+                <div class="d-flex justify-content-center text-light">
+                  <p>Jr Sucre 138, VMT</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="d-flex justify-content-center">
+                  <a href="#contact" class="pl-0 text-light" title="930668823"><i class="fas fa-mobile-alt size-icons d-inline-block"></i></a>
+                </div>
+                <div class="d-flex justify-content-center text-light">
+                  <p>930 668 823</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
+  <script src="./view/assets/bootstrap/jquery-3.3.1.slim.min.js"></script>
+  <script src="./view/assets/bootstrap/popper.min.js"></script>
+  <script src="./view/assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
-
-<!-- <section class="container-fluid">
-  <div class="row">
-    <div class="col-12 col-sm-6 col-md-8 col-lg-4 col-xl-8  borde1">uno</div>  
-    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2 borde2">dos</div>
-    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-2 borde3">tres</div>
-  </div>
-  <div class="row d-block">
-    <div class="col border">
-      <div class="clearfix">
-        <span class="float-left">izquierda</span>
-        <span class="float-right">derecha</span>
-      </div>
-    </div>
-    <div class="col border">
-      <div class="clearfix">
-        <span class="float-left">izquierda</span>
-        <span class="float-right">derecha</span>
-      </div>
-    </div >
-    <div class="float-sm-right">cdc</div>
-    <div class="mx-auto" style="width: 50px;">centro</div>
-  </div>
-</main>
-</section> -->
