@@ -9,98 +9,53 @@ body, header {
 ul {
   list-style: none;
 }
-.text-color-main {
-   color: #f55071;
+.background-pink {
+  background-color:  #f55071;
 }
-.secondary-background {
-  background-color: #2a3262;
+
+.background-purple {
+    background-color: #2a3262;
 }
-.contact-color {
-  color:  #505257;
+.pink-text {
+  color: #f55071;
 }
-.main-color { 
+.purple-text {
+  color:#2a3262;
+}
+
+#navbar a {
+  color: #2a3262;
+}
+
+#navbar a:hover, #contact i:hover{
+  color: #f55071;
+} 
+
+.grey-text { 
   color: #9BA9C5;
 }
+
  h2, h3 {
   font-family: 'Source Sans Pro', sans-serif
 }
 
-.my-navbar {
-  padding: .6rem 1rem;
-  background-color: white;
-  position: fixed;
-  width: 100%;
-  z-index: 9999;
-}
 
 
 .img-home {
   background-position: center center;
   background-image: url('https://images.pexels.com/photos/939331/pexels-photo-939331.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-repeat: no-repeat;
+  background-size: cover; */
 }
 .font-l-spartan {
   font-family: 'League spartan',  serif; 
 }
-.bg-skills {
-  background-color:   #2a3262;
-}
 
-.background-main {
-  background-color: #f55071;
-}
-
-.main-text {
-  color: #f55071;
-}
-.secondary-text {
-  color:#2a3262;
-}
-#navbar a {
-  color: #2a3262;
-}
-
-#navbar a:hover {
-  color: #f55071;
-} 
 .size-icons {
   font-size: 3rem;
 }
 .total-height {
   height: 100vh;
-}
-
-.img {
-  width: auto;
-  height: auto;
-}
-
-.padding-none {
-  padding: 0px;
-  margin: 0%;
-}
-
-
-/* Estilos a home*/
-
-.borde3 {
-  background-color: #EFF0F4;
-
-}
-.borde1{
-background-color:  #2a3262;
-}
-.borde1 a {
-  padding: 1rem 1rem; 
-}
-
-.btn-green {
-  background-color:  #f55071;
-  color: white;
-}
-i:hover {
-  color: #f55071;
 }
 
 @media (min-width: 445px) { 
