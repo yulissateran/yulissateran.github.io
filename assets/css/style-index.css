@@ -9,22 +9,26 @@ body, header {
 ul {
   list-style: none;
 }
+.background-gray {
+  background-color: #E5E7E9;  
+}
 .background-pink {
   background-color:  #f55071;
 }
 
 .background-purple {
-    background-color: #2a3262;
+    background-color: #2a3262; 
 }
 .pink-text {
   color: #f55071;
 }
 .purple-text {
-  color:#2a3262;
+  color: #2a3262; 
 }
 
 #navbar a {
-  color: #2a3262;
+  color: #8E44AD ;
+  /* #2a3262; */
 }
 
 #navbar a:hover, #contact i:hover{
@@ -36,7 +40,8 @@ ul {
 }
 
  h2, h3 {
-  font-family: 'Source Sans Pro', sans-serif
+  /* font-family: 'Source Sans Pro', sans-serif; */
+  font-family: 'League spartan' ;
 }
 
 
