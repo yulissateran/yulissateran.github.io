@@ -32,8 +32,11 @@ ul {
   /*  */
 }
 
-#navbar a:hover, #contact i:hover{
-  color: #8E44AD;
+.card a:hover {
+  background-color: #2a3262;
+}
+#navbar a:hover, #contact i:hover, #navbar li:hover {
+  color: #f55071;
 } 
 
 .grey-text { 
@@ -58,10 +61,10 @@ ul {
 }
 
 .size-icons {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .total-height {
-  height: 100vh;
+  height: 90vh;
 }
 
 @media (min-width: 445px) { 
