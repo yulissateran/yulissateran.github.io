@@ -27,12 +27,13 @@ ul {
 }
 
 #navbar a {
-  color: #8E44AD ;
-  /* #2a3262; */
+  color:  #2a3262;
+  font-family: 'League spartan';
+  /*  */
 }
 
 #navbar a:hover, #contact i:hover{
-  color: #f55071;
+  color: #8E44AD;
 } 
 
 .grey-text { 
