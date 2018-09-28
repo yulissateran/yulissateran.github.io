@@ -10,6 +10,7 @@ ul {
   list-style: none;
 }
 .background-gray {
+  /* background-color: #fadbd8; */
   background-color: #E5E7E9;  
 }
 .background-pink {
@@ -38,7 +39,6 @@ ul {
 #navbar a:hover, #contact i:hover, #navbar li:hover {
   color: #f55071;
 } 
-
 .grey-text { 
   color: #9BA9C5;
 }
