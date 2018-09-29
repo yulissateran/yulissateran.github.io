@@ -52,9 +52,11 @@ ul {
 
 .img-home {
   background-position: center center;
-  background-image: url('https://images.pexels.com/photos/939331/pexels-photo-939331.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-  /* background-repeat: no-repeat;
-  background-size: cover; */
+  background-image: url('../img/home-portafolio.png');
+   background-repeat: no-repeat;
+  background-size: cover; 
+  /* -webkit-filter: blur(2px);
+filter: blur(2px); */
 }
 .font-l-spartan {
   font-family: 'League spartan',  serif; 
