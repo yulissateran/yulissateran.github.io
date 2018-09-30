@@ -6,11 +6,13 @@
 body, header {
   font-family: 'Montserrat', sans-serif;
 }
+body {
+  position: relative; 
+}
 ul {
   list-style: none;
 }
 .background-gray {
-  /* background-color: #fadbd8; */
   background-color: #E5E7E9;  
 }
 .background-pink {
@@ -44,19 +46,14 @@ ul {
 }
 
  h2, h3 {
-  /* font-family: 'Source Sans Pro', sans-serif; */
   font-family: 'League spartan' ;
 }
-
-
 
 .img-home {
   background-position: center center;
   background-image: url('../img/home-portafolio.png');
    background-repeat: no-repeat;
   background-size: cover; 
-  /* -webkit-filter: blur(2px);
-filter: blur(2px); */
 }
 .font-l-spartan {
   font-family: 'League spartan',  serif; 
