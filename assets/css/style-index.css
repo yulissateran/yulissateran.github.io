@@ -1,4 +1,54 @@
-@font-face {
+:root {
+  --height-nav : 60px;
+  --font-size-nav-links: 16px;
+  --font-size-h1: 67px;
+  --font-size-h2: 27px;
+  --height-icons-hero: 59px;/* iconos  linkedin, github, skills*/
+  --font-size-h3: 29px;/* titles section*/
+  --font-size-text: 13px;/* text hero*/
+  --height-progres-bar : 16px;
+  --width-progres-bar : 16px;
+  --height-text-skills : 220px;
+  --height-img-proyect : 220px;
+  --background-white: #fff;
+  --gray: #E5E7E9;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* padding: 0;
+  margin: 0; */
+  background-color: var(--gray);
+}
+.navbar {
+  background: var(--background-white);
+  padding: 0.5rem 1rem;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu  .link {
+  text-decoration: none;
+  font-weight: 450px;
+  padding: 0.5rem;
+  display: block;
+}
+
+
+
+
+/* @font-face {
   font-family: 'League spartan';
   src: url(../fonts/leaguespartan-bold.ttf);
   font-weight: bold;
@@ -32,7 +82,6 @@ ul {
 #navbar a {
   color:  #2a3262;
   font-family: 'League spartan';
-  /*  */
 }
 
 .card a:hover {
@@ -70,4 +119,4 @@ ul {
   h1 {
     font-size: 5rem;
   }
- }
+ } */
