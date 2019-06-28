@@ -1,4 +1,72 @@
-@font-face {
+:root {
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --purple : #2a3262;
+  --bold: 700;
+  --pink: #f55071;
+  --gray:#E5E7E9;
+}
+
+*, :before, :after  {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  background-color: var(--gray);
+}
+
+.navbar {
+  background: white;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.menu-link {
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 0;
+  color: var(--purple);
+  font-weight: var(--bold);
+}
+
+.menu-link:hover {
+  color: var(--pink);
+}
+.menu {
+  display: none;
+  list-style: none;
+}
+
+.menu-button {
+  background-color: transparent;
+  color: rgba(0,0,0,.3);
+  border: 1px solid  rgba(0,0,0,.3);
+}
+.menu-button:hover {
+  border-color: rgba(0,0,0,.6);
+  cursor: pointer;
+}
+
+.container-menu-button {
+  padding: 0.5rem 0;
+}
+
+.menu-button {
+  padding: 4px 12px;
+  border-radius: .25rem;
+}
+
+
+
+/* @font-face {
   font-family: 'League spartan';
   src: url(../fonts/leaguespartan-bold.ttf);
   font-weight: bold;
@@ -32,7 +100,6 @@ ul {
 #navbar a {
   color:  #2a3262;
   font-family: 'League spartan';
-  /*  */
 }
 
 .card a:hover {
@@ -49,12 +116,12 @@ ul {
   font-family: 'League spartan' ;
 }
 
-.img-home {
+ .img-home {
   background-position: center center;
   background-image: url('../img/home-portafolio.png');
    background-repeat: no-repeat;
   background-size: cover; 
-}
+} 
 .font-l-spartan {
   font-family: 'League spartan',  serif; 
 }
@@ -70,4 +137,4 @@ ul {
   h1 {
     font-size: 5rem;
   }
- }
+ } */
