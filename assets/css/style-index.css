@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -62,11 +62,11 @@ body {
 .menu-button {
   padding: 4px 12px;
   border-radius: .25rem;
-}
+} */
 
 
 
-/* @font-face {
+ @font-face {
   font-family: 'League spartan';
   src: url(../fonts/leaguespartan-bold.ttf);
   font-weight: bold;
@@ -137,4 +137,4 @@ ul {
   h1 {
     font-size: 5rem;
   }
- } */
+ } 
