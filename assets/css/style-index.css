@@ -1,54 +1,100 @@
-:root {
-  --height-nav : 60px;
-  --font-size-nav-links: 16px;
-  --font-size-h1: 67px;
-  --font-size-h2: 27px;
-  --height-icons-hero: 59px;/* iconos  linkedin, github, skills*/
-  --font-size-h3: 29px;/* titles section*/
-  --font-size-text: 13px;/* text hero*/
-  --height-progres-bar : 16px;
-  --width-progres-bar : 16px;
-  --height-text-skills : 220px;
-  --height-img-proyect : 220px;
-  --background-white: #fff;
-  --gray: #E5E7E9;
+ :root {
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --purple : #2a3262;
+  --bold: 700;
+  --pink: #f55071;
+  --gray:#E5E7E9;
 }
 
-* {
+*, :before, :after  {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 body {
-  /* padding: 0;
-  margin: 0; */
+  line-height: 1.5;
   background-color: var(--gray);
 }
+@font-face {
+  font-family: 'League spartan';
+  src: url(../fonts/leaguespartan-bold.ttf);
+  font-weight: bold;
+}
+
 .navbar {
-  background: var(--background-white);
+  background: white;
   padding: 0.5rem 1rem;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
-.menu {
-  list-style: none;
-}
-
-.menu {
-  display: flex;
-}
-
-.menu  .link {
+.menu-link {
+  font-family: 'League spartan';
   text-decoration: none;
-  font-weight: 450px;
-  padding: 0.5rem;
+  display: block;
+  padding: 0.5rem 0;
+  color: var(--purple);
+  font-weight: var(--bold);
+}
+
+.menu-item:hover {
+  color: var(--pink);
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+  list-style: none;
+  margin-top: .5rem;
+}
+
+.menu-button {
+  background-color: transparent;
+  color: rgba(0,0,0,.3);
+  border: 1px solid  rgba(0,0,0,.3);
+}
+.menu-button:hover {
+  border-color: rgba(0,0,0,.6);
+  cursor: pointer;
+}
+
+.container-menu-button {
+  padding: 0.5rem 0;
+}
+
+.menu-button {
+  padding: 4px 12px;
+  border-radius: .25rem;
+} 
+
+.d-block {
   display: block;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    margin-top: 0;
+    justify-content: space-around;
+  }
+  
+  .menu-link:hover, .menu-link:active {
+    color: var(--pink);
+    border-bottom : 3px solid var(--pink);    
 
+  }
+}
 
-
-/* @font-face {
+ /* @font-face {
   font-family: 'League spartan';
   src: url(../fonts/leaguespartan-bold.ttf);
   font-weight: bold;
@@ -98,12 +144,12 @@ ul {
   font-family: 'League spartan' ;
 }
 
-.img-home {
+ .img-home {
   background-position: center center;
   background-image: url('../img/home-portafolio.png');
    background-repeat: no-repeat;
   background-size: cover; 
-}
+} 
 .font-l-spartan {
   font-family: 'League spartan',  serif; 
 }
@@ -119,4 +165,4 @@ ul {
   h1 {
     font-size: 5rem;
   }
- } */
+ }  */
