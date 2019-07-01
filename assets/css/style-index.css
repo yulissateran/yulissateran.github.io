@@ -8,6 +8,7 @@
   --bold: 700;
   --pink: #f55071;
   --gray:#E5E7E9;
+  --league: 'League spartan';
 }
 
 *, :before, :after  {
@@ -77,22 +78,107 @@ body {
   display: block;
 }
 
-@media screen and (min-width: 768px) {
-  .menu-button {
-    display: none;
+
+
+main {
+  padding-top: 60px;
+  padding: 60px 50px;
+}
+
+h2 {
+  /* text-align: center; */
+  color: var(--purple);
+  padding: 25px 0;
+  font-family: var(--league);
+}
+/* -------------------------- */
+  section {
+    /* padding-top: 20px; */
   }
-  .menu {
-    display: flex;
-    margin-top: 0;
-    justify-content: space-around;
+  .about-me, .skills {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns:  1fr;
+  }
+
+.about-me {
+  grid-template-areas:  "about-me-title"
+                        "about-me-description" 
+                        "about-me-img";
+  }
+
+  .about-me-description > p {
+    max-width: 400px;
   }
   
-  .menu-link:hover, .menu-link:active {
-    color: var(--pink);
-    border-bottom : 3px solid var(--pink);    
-
+  .about-me-title{ 
+    grid-area : about-me-title;
   }
-}
+  .about-me-description{ 
+    grid-area : about-me-description;
+  }
+  .about-me-img { 
+    grid-area : about-me-img;
+  }
+  .about-me-img .img {
+    border-radius: 50%;
+
+    max-width: 250px;
+    max-height: 250px;
+  }
+  .about-me-img {
+    margin-top: 25px;
+  }
+
+  .skills {
+    grid-template-areas: "skills-title"
+                          "tech-skills"
+                          "soft-skills";
+  }
+
+  .tech-skills {
+   grid-area: tech-skills ;
+  }
+
+  .soft-skills {
+    grid-area: soft-skills ;
+  }
+
+  .skills-title {
+    grid-area: skills-title ;
+  }
+
+
+  @media screen and (min-width: 768px) {
+    .about-me {
+      grid-template-columns: 2fr 1fr;
+      grid-template-areas: "about-me-title about-me-title"
+                         "about-me-description about-me-img";
+    }
+    .about-me-img {
+      margin-top: 0;
+    }
+    .skills {
+      grid-template-columns: 2fr 1fr;
+      grid-template-areas: "skills-title skills-title"
+                            "tech-skills soft-skills";
+    }
+    .menu-button {
+      display: none;
+    }
+    .menu {
+      display: flex;
+      margin-top: 0;
+      justify-content: space-around;
+    }
+    
+    .menu-link:hover, .menu-link:active {
+      color: var(--pink);
+      border-bottom : 3px solid var(--pink);
+    }
+  }
 
  /* @font-face {
   font-family: 'League spartan';
