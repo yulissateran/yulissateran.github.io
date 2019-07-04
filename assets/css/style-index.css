@@ -13,11 +13,13 @@
 
 *, :before, :after  {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  /* padding: 0;
+  margin: 0; */
 }
 
 body {
+  padding: 0;
+  margin: 0;
   line-height: 1.5;
   background-color: var(--gray);
 }
@@ -82,20 +84,18 @@ body {
 
 main {
   padding-top: 60px;
-  padding: 60px 50px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
-  /* text-align: center; */
+  text-align: center;
   color: var(--purple);
-  padding: 25px 0;
+  margin-bottom: 5px;
   font-family: var(--league);
 }
 /* -------------------------- */
   section {
-    /* padding-top: 20px; */
-  }
-  .about-me, .skills {
+    padding: 30px 5px;
     width: 100%;
     display: grid;
     align-items: center;
@@ -111,6 +111,7 @@ h2 {
 
   .about-me-description > p {
     max-width: 400px;
+    margin: 0 5px;
   }
   
   .about-me-title{ 
@@ -124,24 +125,52 @@ h2 {
   }
   .about-me-img .img {
     border-radius: 50%;
-
-    max-width: 250px;
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
     max-height: 250px;
   }
   .about-me-img {
     margin-top: 25px;
   }
-
+  .skills h2 , .skills span{
+    color: white;
+  }
   .skills {
+    background-color : var(--purple);
     grid-template-areas: "skills-title"
                           "tech-skills"
                           "soft-skills";
   }
 
-  .tech-skills {
-   grid-area: tech-skills ;
-  }
 
+
+
+ .bg-ligth-white {
+background-color: rgba(255,255,255,.9);
+/* background: #dd0031; */
+ }
+
+
+
+
+
+
+
+
+
+  .tech-skills {
+    width: 100%;
+   grid-area: tech-skills ;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-column-gap: 10px;
+  }
+.tech-skill {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
   .soft-skills {
     grid-area: soft-skills ;
   }
@@ -149,6 +178,23 @@ h2 {
   .skills-title {
     grid-area: skills-title ;
   }
+
+ .progress {
+  height: 1rem;
+  max-width: 100%;
+  width: 140px;
+  background-color: white;
+  border-radius: .35rem;
+  margin: 5px;
+ }
+
+.progress-bar {
+  width: 50%;
+  height: 100%;
+  background-color: var(--pink);
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
 
 
   @media screen and (min-width: 768px) {
@@ -161,7 +207,7 @@ h2 {
       margin-top: 0;
     }
     .skills {
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns: 2fr 2fr;
       grid-template-areas: "skills-title skills-title"
                             "tech-skills soft-skills";
     }
