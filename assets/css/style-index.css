@@ -4,17 +4,18 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
+  --width-container: 960px;
   --purple : #2a3262;
   --bold: 700;
   --pink: #f55071;
   --gray:#E5E7E9;
   --league: 'League spartan';
+  --white: white ;
+  --box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
 }
 
 *, :before, :after  {
   box-sizing: border-box;
-  /* padding: 0;
-  margin: 0; */
 }
 
 body {
@@ -23,6 +24,7 @@ body {
   line-height: 1.5;
   background-color: var(--gray);
 }
+
 @font-face {
   font-family: 'League spartan';
   src: url(../fonts/leaguespartan-bold.ttf);
@@ -35,6 +37,7 @@ body {
   position: fixed;
   width: 100%;
   border-bottom: 1px solid rgba(0,0,0,.1);
+  box-shadow: var(--box-shadow);
 }
 
 .menu-link {
@@ -62,6 +65,7 @@ body {
   color: rgba(0,0,0,.3);
   border: 1px solid  rgba(0,0,0,.3);
 }
+
 .menu-button:hover {
   border-color: rgba(0,0,0,.6);
   cursor: pointer;
@@ -80,8 +84,6 @@ body {
   display: block;
 }
 
-
-
 main {
   padding-top: 60px;
   font-family: Arial, Helvetica, sans-serif;
@@ -90,12 +92,12 @@ main {
 h2 {
   text-align: center;
   color: var(--purple);
-  margin-bottom: 5px;
+  margin: 5px 0 25px 0;
   font-family: var(--league);
 }
 /* -------------------------- */
   section {
-    padding: 30px 5px;
+    padding: 30px 0;
     width: 100%;
     display: grid;
     align-items: center;
@@ -103,7 +105,8 @@ h2 {
     grid-template-columns:  1fr;
   }
 
-.about-me {
+.about-me  {
+  /* justify-content: center; */
   grid-template-areas:  "about-me-title"
                         "about-me-description" 
                         "about-me-img";
@@ -111,78 +114,78 @@ h2 {
 
   .about-me-description > p {
     max-width: 400px;
-    margin: 0 5px;
+    margin: 0 15px;
   }
   
   .about-me-title{ 
     grid-area : about-me-title;
   }
   .about-me-description{ 
+  max-width: var(--width-container);
     grid-area : about-me-description;
+    /* justify-self: right; */
   }
   .about-me-img { 
     grid-area : about-me-img;
+    margin: 0;
+    justify-self: left;
+
   }
+
   .about-me-img .img {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
     max-width: 100%;
     max-height: 250px;
+    box-shadow: var(--box-shadow);
+
   }
-  .about-me-img {
-    margin-top: 25px;
-  }
-  .skills h2 , .skills span{
+
+  .container-skills h2 , .container-skills span{
     color: white;
   }
-  .skills {
+
+  .container-skills {
+    width: 100%;
+    grid-template-columns:  1fr ;
+    grid-gap: 15px;
     background-color : var(--purple);
     grid-template-areas: "skills-title"
-                          "tech-skills"
-                          "soft-skills";
+                         "tech-skills";
   }
 
-
-
-
  .bg-ligth-white {
-background-color: rgba(255,255,255,.9);
-/* background: #dd0031; */
+    background-color: rgba(255,255,255,.9);
  }
 
 
 
-
-
-
-
-
-
   .tech-skills {
+    max-width: var(--width-container);
+    grid-area: tech-skills;
     width: 100%;
-   grid-area: tech-skills ;
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   grid-column-gap: 10px;
+    display: grid;
+    grid-template-columns:  150px;
+    grid-gap: 20px;
+    justify-content: center;
   }
-.tech-skill {
+
+.skill {
   display: flex;
   flex-direction: column;
   align-items:center;
 }
-  .soft-skills {
-    grid-area: soft-skills ;
-  }
+
 
   .skills-title {
     grid-area: skills-title ;
   }
 
  .progress {
-  height: 1rem;
+  height: .75rem;
   max-width: 100%;
-  width: 140px;
+  width: 120px;
   background-color: white;
   border-radius: .35rem;
   margin: 5px;
@@ -196,21 +199,104 @@ background-color: rgba(255,255,255,.9);
   border-bottom-left-radius: inherit;
 }
 
+.card {
+  background-color: white;
+  border-radius: 5px;
+  margin: 5px;
+  box-shadow: var(--box-shadow);
+  width: 90%;
+  display:inline-block;
+}
+.icon-more {
+  float: right;
+  cursor: pointer;
+}
+.card-body {
+  padding: 15px;
+}
+
+.card h5 {
+  margin-top: 7px;
+}
+.card figure {
+  border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
+  margin: 0;
+  height: 200px;
+}
+.card img {
+  border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.proyects {
+  width: 100%;
+  max-width: var(--width-container);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skill-img {
+  width: 80px;
+  height: 80px;
+}
+
+.contact {
+  background-color: var(--purple);
+  /* display: block; */
+}
+
+
+.contact-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 15px;
+  justify-items: center;
+}
+.text-light  {
+  color: var(--white);
+}
+@media screen and (min-width: 320px) {
+
+  .about-me-img  {
+    margin-top: 25px;
+  }
+  .about-me-img .img {
+    width: 200px;
+    height: 200px;
+  }
+  .tech-skills {
+    grid-template-columns:  repeat(2,150px);
+  }
+}
+
+  @media screen and (min-width: 576px){
+    .card {
+      width: 280px;
+   }
+   .contact-main {
+    display: grid;
+    grid-template-columns: 100px  250px;
+    grid-column-gap: 15px;
+  }
+  }
 
   @media screen and (min-width: 768px) {
+    .tech-skills {
+      grid-gap: 25px;
+      grid-template-columns:  repeat(3,150px);
+    }
     .about-me {
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns: 2fr  1fr;
       grid-template-areas: "about-me-title about-me-title"
                          "about-me-description about-me-img";
     }
     .about-me-img {
       margin-top: 0;
     }
-    .skills {
-      grid-template-columns: 2fr 2fr;
-      grid-template-areas: "skills-title skills-title"
-                            "tech-skills soft-skills";
-    }
+
     .menu-button {
       display: none;
     }
@@ -218,12 +304,16 @@ background-color: rgba(255,255,255,.9);
       display: flex;
       margin-top: 0;
       justify-content: space-around;
+      margin: 1px;
     }
     
     .menu-link:hover, .menu-link:active {
       color: var(--pink);
       border-bottom : 3px solid var(--pink);
     }
+  }
+  @media screen and (min-width: 992px) {
+
   }
 
  /* @font-face {
