@@ -4,10 +4,12 @@ $pink: #f55071;
 $gray: #e5e7e9;
 $padding-card-y: 15px; /* |*/
 $padding-card-x: 20px; /*  --- */
-body, header, * {
-  font-family: 'Montserrat', sans-serif;
+body,
+header,
+* {
+  font-family: "Montserrat", sans-serif;
   padding: 0;
-  margin:0;
+  margin: 0;
   box-sizing: border-box;
 }
 .container-cards {
@@ -31,7 +33,11 @@ body, header, * {
   top: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(to top, rgba(42, 50, 98, .8), rgba(0, 0, 0, 0.01));
+  background: linear-gradient(
+    to top,
+    rgba(42, 50, 98, 0.8),
+    rgba(0, 0, 0, 0.01)
+  );
   right: 0;
   display: flex;
   align-items: flex-end;
@@ -74,11 +80,20 @@ body, header, * {
     }
     h5 {
       margin: 0;
+      color: $purple;
     }
   }
+  h6 {
+    color: $purple;
+    font-size: 18px;
+    font-weight: 500;
+  }
 }
-
- .footer {
+.body p:last-child {
+  color: gray;
+  font-size: 0.9rem;
+}
+.footer {
   display: flex;
   justify-content: space-around;
   width: 100%;

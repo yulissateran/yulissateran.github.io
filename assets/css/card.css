@@ -1,6 +1,8 @@
 /* |*/
 /*  --- */
-body, header, * {
+body,
+header,
+* {
   font-family: "Montserrat", sans-serif;
   padding: 0;
   margin: 0;
@@ -71,6 +73,17 @@ body, header, * {
 }
 .Card .Card__content .body .title h5 {
   margin: 0;
+  color: #2a3262;
+}
+.Card .Card__content .body h6 {
+  color: #2a3262;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.body p:last-child {
+  color: gray;
+  font-size: 0.9rem;
 }
 
 .footer {
