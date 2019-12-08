@@ -3,8 +3,11 @@
   src: url(../fonts/leaguespartan-bold.ttf);
   font-weight: bold;
 }
-body, header {
+body, header, * {
   font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
 }
 body {
   position: relative; 
