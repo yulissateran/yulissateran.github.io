@@ -1,0 +1,32 @@
+import React, { useState } from 'react';
+import './Header.scss';
+import logo from '../../assets/img/logo.png';
+import IconMenu from '../IconMenu/IconMenu';
+import Menu from '../Menu/Menu';
+
+
+const Header = () => {
+
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
+
+  return (
+    <header className={ 'Header'+ (showMobileMenu?' responsive-open': '')}>
+      <Toolbar setShowMobileMenu={() => setShowMobileMenu((status) => !status)}  />
+      {showMobileMenu && <Menu isMobile={true}/>}
+    </header>
+  );
+}
+
+const Toolbar = ({setShowMobileMenu}) => {
+  return (
+    <div className='Toolbar'>
+      <Logo/>
+      <Menu isMobile={false}/>
+      <IconMenu onClick={setShowMobileMenu}/>
+    </div>
+  )
+}
+
+const Logo = () =>  <img src={logo} alt="logo" className="Logo" />;
+
+export default Header;

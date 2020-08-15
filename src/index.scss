@@ -1,0 +1,59 @@
+@import 'src/assets/sass/variables.scss';
+
+:root {
+  --color-gray: #7C829B;
+  --color-purple-gray: #9888A8;
+  --color-dark-gray: #36434B;
+  --color-black: #050719;
+  --color-purple: #392AC8;
+  --color-dark-purple: #1A2252;
+  --color-red: #DB2F33;
+  --color-green: #0FA68A;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family  ;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  outline: none;
+}
+
+button:hover, a:hover {
+  cursor: pointer;
+}
+
+#root {
+display: flex;
+}
+
+.main {
+  padding-top: 10rem;
+}
