@@ -21,8 +21,8 @@
   animation: pop-in .6s ease-out forwards;
   display: flex;
   justify-content: center;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 400;
 
   a {
     transition-property: all;
@@ -32,16 +32,16 @@
   }
 
   span {
-    color: black;
+    color: #888888;
   }
 
-  a:hover {
-    color: $logo-color;
+  span:hover {
+    color: black;
   }
 }
 
 .Section-link.active a span {
-  color: $logo-color;
+  color: $color-pink;
 }
 
 
@@ -70,7 +70,7 @@
       line-height: 1;
       text-transform: uppercase;
       font-stretch: 100%;
-      font-weight: 549;
+      font-weight: 500;
     }
   }
 

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './Header.scss';
-import logo from '../../assets/img/logo.png';
+import logo from '../../assets/img/test/svg2.svg';
 import IconMenu from '../IconMenu/IconMenu';
 import Menu from '../Menu/Menu';
+import Container from '../Container';
 
 
 const Header = () => {
@@ -11,8 +12,10 @@ const Header = () => {
 
   return (
     <header className={ 'Header'+ (showMobileMenu?' responsive-open': '')}>
-      <Toolbar setShowMobileMenu={() => setShowMobileMenu((status) => !status)}  />
+     <Container>
+     <Toolbar setShowMobileMenu={() => setShowMobileMenu((status) => !status)}  />
       {showMobileMenu && <Menu isMobile={true}/>}
+     </Container>
     </header>
   );
 }

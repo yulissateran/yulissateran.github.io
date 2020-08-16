@@ -14,8 +14,9 @@
   $color-black: #292A2C;
 
 
-  $layout-breakpoint-extra-small: 23.4375rem;
-  $layout-breakpoint-small: 35.9375rem;
-  $layout-breakpoint-medium: 47.9375rem;
-  $layout-breakpoint-large: 61.9375rem;
-  $layout-breakpoint-extra-large: 74.9375rem;
+  // $layout-breakpoint-extra-small: 23.4375rem;
+  
+  $layout-breakpoint-small: 34rem;//594
+  $layout-breakpoint-medium: 47.9375rem;//767
+  $layout-breakpoint-large: 61.9375rem;//991
+  $layout-breakpoint-extra-large: 74.9375rem;//1199

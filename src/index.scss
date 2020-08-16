@@ -15,7 +15,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: $font-family  ;
+  height: 100vh;
+  font-family: $font-family ;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fff;
@@ -52,8 +53,79 @@ button:hover, a:hover {
 
 #root {
 display: flex;
+flex-direction: column;
+height: 100%;
+width: 100%;
 }
 
 .main {
-  padding-top: 10rem;
+  margin-top: 7.75rem;
+  flex: 1;
 }
+
+
+
+// @font-face {
+//   font-family: 'Calibre';
+//   src: url('./assets/webfonts/Calibre-Thin.woff2') format('woff2'),
+//       url('./assets/webfonts/Calibre-Thin.woff') format('woff');
+//   font-weight: 100;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Calibre';
+//   src: url('./assets/webfonts/Calibre-Light.woff2') format('woff2'),
+//       url('./assets/webfonts/Calibre-Light.woff') format('woff');
+//   font-weight: 300;
+//   font-style: normal;
+// }
+@font-face {
+  font-family: 'Calibre';
+  src: url('./assets/webfonts/Calibre-Regular.woff2') format('woff2');
+      // url('./assets/webfonts/Calibre-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Calibre';
+  src: url('./assets/webfonts/Calibre-Medium.woff2') format('woff2');
+      // url('./assets/webfonts/Calibre-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Calibre';
+  src: url('./assets/webfonts/Calibre-Semibold.woff2') format('woff2');
+      // url('./assets/webfonts/Calibre-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Calibre';
+  src: url('./assets/webfonts/Calibre-Bold.woff2') format('woff2');
+      // url('./assets/webfonts/Calibre-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+// @font-face {
+//   font-family: 'Calibre';
+//   src: url('./assets/webfonts/Calibre-Black.woff2') format('woff2'),
+//       url('./assets/webfonts/Calibre-Black.woff') format('woff');
+//   font-weight: 900;
+//   font-style: normal;
+// }
+@font-face {
+  font-family: 'Noe Display';
+  src: url('./assets/webfonts/NoeDisplay-Bold.woff2') format('woff2');
+      // url('./assets/webfonts/NoeDisplay-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+// @font-face {
+//   font-family: 'Noe Display';
+//   src: url('./assets/webfonts/NoeDisplay-Regular.woff2') format('woff2'),
+//       url('./assets/webfonts/NoeDisplay-Regular.woff') format('woff');
+//   font-weight: normal;
+//   font-style: normal;
+// }

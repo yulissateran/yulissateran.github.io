@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from './components/Header/Header';
+import Home from './pages/Home';
+
 import './App.scss';
 
 function App() {
@@ -8,8 +10,7 @@ function App() {
       <Header >
       </Header>
       <div className="main">
-      no soy
-
+        <Home/>
       </div>
     </>
   );

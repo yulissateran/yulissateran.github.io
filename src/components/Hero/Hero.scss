@@ -1,0 +1,80 @@
+@import '../../assets/sass/variables.scss';
+
+.Hero-content {
+
+  // .section {
+  padding: 2.5rem 0 3.75rem 0;
+  // }
+  // }
+
+}
+
+.Hero-text {
+  padding-right: 0.938rem;
+}
+
+.Hero-main-text {
+  font-size: 2rem;
+  color: #0A0A14;
+  line-height: 2.563rem;
+  font-weight: 500;
+}
+
+.Hero--company-name {
+  color: $color-pink;
+}
+
+.Hero--subtitle {
+  font-size: 1.25rem;
+  padding-top: 1.5rem;
+}
+
+.profile {
+  max-width: 100%;
+  height: auto;
+}
+
+.container-profile {
+  padding-top: 4rem;
+  padding-bottom: 0;
+}
+
+@media (min-width: $layout-breakpoint-small) {
+  .Hero-content {
+    padding: 6rem 0 7.75rem 0;
+  }
+
+  .Hero-main-text {
+    font-size: 3.125rem;
+    line-height: 3.749rem;
+  }
+
+  .Hero--subtitle {
+    font-size: 1.625rem;
+    padding-top: 1.25rem;
+  }
+
+}
+
+
+@media (min-width: $layout-breakpoint-medium) {
+  .Hero-content {
+    display: flex;
+    position: relative;
+  }
+
+  .Hero-text {
+    width: 56.5%;
+    max-width: 56.5%;
+    flex: 1 0 auto;
+  }
+
+  .container-profile {
+    position: absolute;
+    right: 0;
+    margin-left: 4.875rem;
+    padding-top: 0;
+    width: 31%;
+    max-width: 31%;
+  }
+}

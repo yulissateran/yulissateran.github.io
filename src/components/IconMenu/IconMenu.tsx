@@ -9,11 +9,11 @@ const IconMenu = ({ onClick }:any) => {
     onClick();
   } 
   return (
-        <a 
+        <button 
           onClick={toggleMenu} 
           className={"icon" + (isOpenMenu ? ' open-menu' : ' closed-menu')}>
           <span></span>
-        </a>
+        </button>
    
   )
 }
