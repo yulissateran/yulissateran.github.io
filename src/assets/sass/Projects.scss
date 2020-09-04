@@ -1,0 +1,14 @@
+@import './variables.scss';
+
+.Projects {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(26.313rem, 1fr));
+  gap: 1rem 1.875rem;
+}
+
+@media (min-width: $layout-breakpoint-small) {
+  .Projects {
+    grid-gap: 2rem;
+  }
+}

@@ -1,12 +1,7 @@
 @import '../../assets/sass/variables.scss';
 
 .Hero-content {
-
-  // .section {
-  padding: 2.5rem 0 3.75rem 0;
-  // }
-  // }
-
+  padding: 4.5rem 0 3.75rem 0;
 }
 
 .Hero-text {
@@ -26,17 +21,18 @@
 
 .Hero--subtitle {
   font-size: 1.25rem;
-  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  span {
+    // color: white;
+    padding: .8rem;
+    // background-color: #de0f66;
+    background-color: #f0f2f6;
+  }
 }
 
 .profile {
   max-width: 100%;
   height: auto;
-}
-
-.container-profile {
-  padding-top: 4rem;
-  padding-bottom: 0;
 }
 
 @media (min-width: $layout-breakpoint-small) {
@@ -60,21 +56,16 @@
 @media (min-width: $layout-breakpoint-medium) {
   .Hero-content {
     display: flex;
-    position: relative;
+    justify-content: center;
+    // justify-content: space-between;
+    // position: relative;
   }
 
   .Hero-text {
-    width: 56.5%;
-    max-width: 56.5%;
+    // width: 56.5%;
+    // max-width: 56.5%;
+    max-width: 80%;
     flex: 1 0 auto;
   }
 
-  .container-profile {
-    position: absolute;
-    right: 0;
-    margin-left: 4.875rem;
-    padding-top: 0;
-    width: 31%;
-    max-width: 31%;
-  }
 }

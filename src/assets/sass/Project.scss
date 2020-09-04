@@ -1,0 +1,98 @@
+img {
+  max-width: 100%;
+}
+
+.Project {
+  background-size: 600% 600%;
+  min-height: 20rem;
+  -webkit-animation: flow 11s ease infinite;
+  animation: flow 11s ease infinite;
+  overflow: hidden;
+
+  .container-img {
+    position: relative;
+
+    img {
+      top: 4rem;
+      right: 2rem;
+      height: auto;
+      position: absolute;
+    }
+
+  }
+}
+
+.firstProject {
+  @extend .Project;
+  background-image: linear-gradient(135deg, #40b396 1.19%, #30aeb6 52.6%, #2986ba);
+  ;
+}
+
+.secondProject {
+  @extend .Project;
+  background-image: linear-gradient(315deg, #415cec, #4894e1 51.04%, #499dd1);
+  ;
+}
+
+.secondProject {
+  @extend .Project;
+  background-image: linear-gradient(315deg, rgb(26, 43, 82), rgb(65, 137, 255), #DDEEFE);
+}
+
+.thirdProject {
+  @extend .Project;
+  background-image: linear-gradient(337.42deg, #e7578b, #ed8970);
+  ;
+}
+
+.fourthProject {
+  @extend .Project;
+  background-image: linear-gradient(112deg, #efa434, #f0530f);
+  ;
+}
+
+
+.fifthProject {
+  @extend .Project;
+  background-image: linear-gradient(112deg, #3f3652, #183045);
+}
+
+@-webkit-keyframes flow {
+  0% {
+    background-position: 23% 0
+  }
+
+  50% {
+    background-position: 78% 100%
+  }
+
+  to {
+    background-position: 23% 0
+  }
+}
+
+@keyframes flow {
+  0% {
+    background-position: 23% 0
+  }
+
+  50% {
+    background-position: 78% 100%
+  }
+
+  to {
+    background-position: 23% 0
+  }
+}
+
+@-webkit-keyframes textShine {
+  to {
+    background-position: 200%
+  }
+}
+
+@keyframes textShine {
+  to {
+    background-position: 200%
+  }
+}

@@ -1,35 +1,36 @@
 import React from "react";
 import "./Hero.scss";
 import Container from "../Container";
-import profile from '../../assets/img/test/profile.jpg';
+// import profile from '../../assets/img/yteran-profile.png';
+ import Profile from '../Profile';
 
 const Hero = () => {
   return (
       <Container>
         <div className="Hero-content">
+        {/* <Profile/> */}
+        
           <div className="Hero-text">
           <span className="Hero-main-text">
-            { 'I’m Pratibha, a Product Designer at '}
+            { 'I’m Yulissa, a Front-end Developer at '}
             
             <a href="https://www.everis.com/" className="Hero--company-name">
-              <span>Microsoft</span>
+              <span>Everis</span>
             </a>
-            { ' Redmond. I enjoy creating user-centric, delightful, and human experiences.'}
+            { ' Peru. I enjoy creating ----------, --------, and ----- experiences.'}
 
              
           </span>
           <div className="Hero--subtitle">
           <span>
-            Former Design Lead at 
+            Lorem ipsum dolor sit amet
             <a href="https://www.everis.com/" className="Hero--company-name">
-              <span> Sprinklr </span>
+              <span>Laboratoria </span>
             </a>
           </span>
          </div>
           </div>
-          <div className="container-profile">
-            <img alt="fotografía de yulissa  terán" className="profile" src={profile}/>
-          </div>
+      
         </div>
       </Container>
   );

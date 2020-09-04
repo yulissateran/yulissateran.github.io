@@ -1,0 +1,23 @@
+@import './variables.scss';
+
+.img-profile {
+  max-width: 100%;
+  height: auto;
+}
+
+.container-profile {
+  display: none;
+  padding-top: 4rem;
+  padding-bottom: 0;
+}
+
+@media (min-width: $layout-breakpoint-medium) {
+  .container-profile {
+    right: 0;
+    display: block;
+    // margin-left: 4.875rem;
+    padding-top: 0;
+    width: 31%;
+    max-width: 31%;
+  }
+}

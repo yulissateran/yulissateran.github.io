@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Header.scss';
-import logo from '../../assets/img/test/svg2.svg';
+import logo from '../../assets/img/logo-degradado.png';
 import IconMenu from '../IconMenu/IconMenu';
 import Menu from '../Menu/Menu';
 import Container from '../Container';
