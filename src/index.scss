@@ -122,6 +122,16 @@ width: 100%;
   font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Fraunces', serif;
+  src: url('./assets/webfonts/Fraunces_144pt-SemiBold.ttf') format('ttf');
+      // url('./assets/webfonts/NoeDisplay-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
 // @font-face {
 //   font-family: 'Noe Display';
 //   src: url('./assets/webfonts/NoeDisplay-Regular.woff2') format('woff2'),

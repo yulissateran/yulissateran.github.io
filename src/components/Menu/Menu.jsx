@@ -2,19 +2,19 @@ import React from 'react';
 import './Menu.scss';
 const sections = [
   { 
-    description:   'Home',
+    description:   'Inicio',
     path:   'about-me'
   },
   { 
-    description:   'About',
+    description:   'Proyectos',
     path:   'tools'
   },
   { 
-   description: 'Experiments',
+   description: 'Herramientas',
    path: 'contact'
   },
   { 
-    description: 'contact',
+    description: 'Contacto',
     path: 'cc'
    }
 ];
