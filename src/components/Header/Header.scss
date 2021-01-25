@@ -1,38 +1,139 @@
-@import 'src/assets/sass/variables.scss';
+@import '../../assets/sass/variables.scss';
+
+.icon {
+  position: relative;
+  height: 1rem;
+  width: 1.499rem;
+  display: block;
+
+  span {
+    margin-top: 7px;
+    height: 2px;
+    background: #000;
+    display: block;
+    width: 100%;
+    position: absolute;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: inherit;
+    }
+
+    &::before {
+      transform: translateY(6px);
+    }
+
+    &::after {
+      transform: translateY(-6px);
+    }
+
+  }
+
+  &::after {
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 1.38rem;
+    left: -1.38rem;
+    top: -1.38rem;
+    display: block;
+    box-sizing: content-box;
+  }
+}
+
+.icon.open-menu {
+  span {
+    visibility: hidden;
+    transform: rotate(0deg);
+  }
+
+  span::after,
+  span::before {
+    visibility: visible;
+  }
+
+  span::after {
+    transform: rotate(45deg);
+  }
+
+  span::before {
+    transform: rotate(-45deg);
+  }
+}
+
+.icon.closed-menu:hover {
+  span::after {
+    transform: translateY(-8px);
+  }
+
+  span::before {
+    transform: translateY(8px);
+  }
+}
+
+
 
 .Header {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    left: 0;
-    right: 0;
-    button {
-      background-color: transparent;
-      border: none;
-      outline: none;
+  position: absolute;
+  //height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  left: 0;
+  right: 0;
+
+  button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+
+  &.sticky {
+    background-color: rgb(245, 245, 245);
+  position: fixed;
+  z-index: 100;
+
+
+    .Toolbar {
+      height: 5rem;
     }
+  }
+
+  &.sticky:not(.responsive-open) {
+    height: initial;
+  }
 }
+
 .Header.responsive-open {
-    height: 100vh;
-    min-height: 32rem;
-    align-items: stretch;
-    background-color: rgb(245,245,245);
+  position: fixed;
+  height: 100%;
+
+  z-index: 100;
+  align-items: stretch;
+  background-color: rgb(245, 245, 245);
 }
 
 .Toolbar {
-    color: white;
-    width: 100%;
-    height: 8rem;
-    // padding: 0 1rem;
-    display: flex;
-   justify-content: space-between;
-   align-items: center;
+  color: white;
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .Logo {
-    width: 2.188rem;
-    height: 2.625rem;
+  width: 2.188rem;
+  height: 2.625rem;
 }
 
 
@@ -40,20 +141,120 @@
 
 
 @keyframes pop-in {
-    0% {
-      opacity: 0;
-      transform: translateY(-4rem) scale(.8);
-    }
-    100% {
-      opacity: 1;
-      transform: none;
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (min-width: $layout-breakpoint-small) {
+  .Toolbar {
+    padding: 0 1.5rem;
+  }
+
+
+}
+
+
+
+
+.Menu {
+  width: 100%;
+  position: absolute;
+  transform: translate(0, -50%);
+  top: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+}
+
+.Menu:not(.responsive) {
+  display: none;
+}
+
+.Section-link {
+  padding: 1rem 0;
+  animation: pop-in .6s ease-out forwards;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 400;
+
+  a {
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+  }
+
+  span {
+    color: #888888;
+  }
+
+  span:hover {
+    color: black;
+  }
+}
+
+.Section-link.active a span {
+  color: $color-pink;
+}
+
+@media (min-width: $layout-breakpoint-large) {
+  .icon {
+      display: none;
+  }
+}
+@media (min-width: $layout-breakpoint-large) {
+  .Menu {
+    display: flex;
+    position: initial;
+    transform: none;
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+
+  .Menu:not(.responsive) {
+    display: flex;
+  }
+
+  .Menu.responsive {
+    display: none;
+  }
+
+  .Section-link {
+    padding: 0 1.5rem;
+    span {
+      font-size: 0.875rem;
+      color: #0A0A14;
+      line-height: 1;
+      text-transform: uppercase;
+      font-stretch: 100%;
+      font-weight: 500;
     }
   }
 
-  @media (min-width:  $layout-breakpoint-small) {
-    .Toolbar {
-        // padding: 0 1.5rem;
-    }
+  .Section-link:first-child {
+    padding-left: 0;
   }
 
+  .Section-link:last-child {
+    padding-right: 0;
+  }
+}
 
+@media (min-width: $layout-breakpoint-large) {
+
+
+  .Header {
+    height: initial;
+  }
+
+}

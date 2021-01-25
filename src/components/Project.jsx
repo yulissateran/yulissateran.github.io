@@ -27,14 +27,24 @@ const styles = {
           <span className="Project-description-subtitle">
             {subtitle}
           </span>
-          <button className="Project-description-action" onClick={onClick}>
+
+<div className="budges">
+<div className="budge">Vue.js</div>
+<div className="budge">Sass</div>
+
+  </div> 
+         <button className="Project-description-action" onClick={onClick}>
             <strong >{actionText}</strong>
             <img src={arrow} alt={alt} className="icon" />
           </button>
         </div>
+        <div className="Project-img-wrapper">
         <div className="Project-img"  onClick={onClick}>
           <img src={img} alt={'fdgfd'} />
         </div>
+        </div>
+
+   
       </div>
     </div>
   )

@@ -5,59 +5,63 @@
   min-height: 40rem;
   -webkit-animation: flow 11s ease infinite;
   animation: flow 11s ease infinite;
-  padding: 4rem 0 0 3.5rem;
   position: relative;
   overflow: hidden;
-  .Project-description{
+
+  .Project-description {
     min-height: 8.5rem;
-  } 
+  }
 
-.project {
-  overflow: hidden;
-}
-.icon {
-  height: 2em;
-  /*width: 1rem;*/
-  display: inline;
-  margin-left: .5rem;
-}
-.Project-description-action {
-  border: none;
-  background: none;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
-  display: flex;
-  align-items: center;
-  padding: .5rem 1rem .5rem 0;
+  .project {
+    padding: 4rem 2.5rem 0;
+    overflow: hidden;
+  }
 
-}
+  .icon {
+    display: inline;
+    margin-left: .5rem;
+  }
 
-.Project-description-subtitle {
-font-size: 1.5rem;
-padding-bottom: 2rem;
-}
+  .Project-description-action {
+    border: none;
+    background: none;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem .5rem 0;
+  }
 
-.Project-description-title {
-  font-family: 'Fraunces', serif;
-font-size: 2.5rem;
-padding-bottom: 1rem;
+  .Project-description-subtitle {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+  }
 
-}
+  .Project-description-title {
+    font-family: 'Fraunces', serif;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+
+  }
 
   .Project-img {
     cursor: pointer;
     position: absolute;
-    object-fit: cover;
     width: auto;
     height: auto;
-    padding: 2.5rem;
+    padding: 2rem 0  0 2rem;
     border-top-left-radius: 20px;
     background-color: white;
+
     img {
       left: 0;
       max-width: 120%;
       height: auto;
-      border: 1px solid  $color-gray-ligth;
+      object-fit: cover;
+      object-position: left top;
+      border: 1px solid #d0d0d3;
+      height: 400px;
+      width: 600px;
     }
 
   }
@@ -79,13 +83,14 @@ padding-bottom: 1rem;
   @extend .Project;
   background-color: #d1e3fa;
 
-/*  background-color: #E2EEFE;*/
- /* background-color: #d6caf9;*/
+  /*  background-color: #E2EEFE;*/
+  /* background-color: #d6caf9;*/
 
- /* background-image: linear-gradient(315deg, #415cec, #4894e1 51.04%, #499dd1);*/
- /*background-image: linear-gradient(315deg, #B6D7EC, #daebf5 51.04%, #B6D7EC);
+  /* background-image: linear-gradient(315deg, #415cec, #4894e1 51.04%, #499dd1);*/
+  /*background-image: linear-gradient(315deg, #B6D7EC, #daebf5 51.04%, #B6D7EC);
 */
 }
+
 /*F7E3F2*/
 /*
 .secondProject {
@@ -96,13 +101,13 @@ padding-bottom: 1rem;
 .thirdProject {
   @extend .Project;
   background-color: #ccf5ba;
- /* background-image: linear-gradient(337.42deg, #e7578b, #ed8970);
+  /* background-image: linear-gradient(337.42deg, #e7578b, #ed8970);
   ;*/
 }
 
 .fourthProject {
   @extend .Project;
-   background-color: #d6caf9;
+  background-color: #d6caf9;
   /*
   background-image: linear-gradient(112deg, #efa434, #f0530f);
   */
@@ -151,5 +156,24 @@ padding-bottom: 1rem;
 @keyframes textShine {
   to {
     background-position: 200%
+  }
+}
+
+.budges {
+  padding: 2rem 0 0 0;
+}
+
+.budge {
+  background-color: #f0f2f6;
+  display: inline;
+  padding: 5px 1rem;
+  border-radius: 15px;
+  margin-right: 5px;
+  font-weight: lighter;
+}
+
+@media (min-width:  $layout-breakpoint-large){
+  .Project-img-wrapper {
+    padding-left: 3.5rem;
   }
 }
